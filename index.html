@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<!--
+  Slam 2048 — Privacy Policy & Terms of Service
+
+  PLACEHOLDERS — search & replace before publishing:
+    sontrtb@gmail.com   Developer support email address (also used in mailto: links)
+    SONFEDEV Developer / publisher name exactly as shown on Google Play
+    [PLAY_STORE_URL]  Google Play listing URL of Slam 2048
+
+  Keep the "Last updated" date (search: datetime=) in sync whenever the content changes.
+  Keep Section 2.3 consistent with the Data safety form in Google Play Console.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Privacy Policy &amp; Terms of Service – Slam 2048</title>
+    <meta name="description"
+        content="Privacy Policy and Terms of Service for Slam 2048, a casual number puzzle game for Android. Learn how the game handles data, advertising through Google AdMob, and the rules for using the game.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#14172e" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#faf8ef" media="(prefers-color-scheme: light)">
+    <meta name="color-scheme" content="dark light">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Slam 2048 – Privacy Policy &amp; Terms of Service">
+    <meta property="og:description"
+        content="How Slam 2048 handles data, advertising, and the terms for using the game.">
+
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23edc22e'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='22' font-weight='900' text-anchor='middle' fill='%23fff'%3E2048%3C/text%3E%3C/svg%3E">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Slam 2048 – Privacy Policy & Terms of Service",
+    "description": "Privacy Policy and Terms of Service for the Slam 2048 mobile game.",
+    "dateModified": "2026-10-29",
+    "inLanguage": "en",
+    "about": { "@type": "MobileApplication", "name": "Slam 2048", "operatingSystem": "Android", "applicationCategory": "GameApplication" }
+  }
+  </script>
+
+    <style>
+        :root {
+            --bg: #14172e;
+            --bg-2: #1b1f3d;
+            --surface: #20254a;
+            --surface-2: #272d58;
+            --border: rgba(255, 255, 255, .09);
+            --text: #e9ebf7;
+            --text-muted: #a7acd0;
+            --heading: #ffffff;
+            --accent: #edc22e;
+            --accent-2: #f65e3b;
+            --link: #ffd257;
+            --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+            --radius: 16px;
+            --t2: #eee4da;
+            --t4: #ede0c8;
+            --t8: #f2b179;
+            --t16: #f59563;
+            --t32: #f67c5f;
+            --t64: #f65e3b;
+            --t128: #edcf72;
+            --t2048: #edc22e;
+            --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --header-h: 64px;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #faf8ef;
+                --bg-2: #f3efe2;
+                --surface: #ffffff;
+                --surface-2: #f7f3e8;
+                --border: rgba(119, 110, 101, .18);
+                --text: #3c3a36;
+                --text-muted: #776e65;
+                --heading: #2b2925;
+                --link: #c0560f;
+                --shadow: 0 8px 24px rgba(119, 110, 101, .14);
+            }
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--header-h) + 16px);
+            -webkit-text-size-adjust: 100%;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font);
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            color: var(--text);
+            background:
+                radial-gradient(1200px 500px at 10% -10%, rgba(237, 194, 46, .12), transparent 60%),
+                radial-gradient(900px 500px at 110% 0%, rgba(246, 94, 59, .10), transparent 60%),
+                var(--bg);
+            background-attachment: fixed;
+        }
+
+        a {
+            color: var(--link);
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            text-decoration-thickness: 2px;
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 6px;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 8px;
+            z-index: 100;
+            background: var(--accent);
+            color: #2b2925;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
+        .skip-link:focus {
+            left: 8px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ---------- Top bar ---------- */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            height: var(--header-h);
+            background: color-mix(in srgb, var(--bg) 82%, transparent);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .topbar .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 900;
+            letter-spacing: .02em;
+            color: var(--heading);
+            text-decoration: none;
+        }
+
+        .brand-tile {
+            display: grid;
+            place-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 9px;
+            background: var(--t2048);
+            color: #fff;
+            font-size: .7rem;
+            font-weight: 900;
+            box-shadow: 0 3px 0 #c9a21d;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            font: inherit;
+            font-size: .95rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--heading);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            transition: transform .15s ease, background .15s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            background: var(--surface-2);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            padding: 56px 0 36px;
+            text-align: center;
+        }
+
+        .tiles {
+            display: inline-flex;
+            gap: 8px;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tile {
+            display: grid;
+            place-items: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 1.15rem;
+            color: #fff;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, .22);
+            animation: pop .5s cubic-bezier(.2, 1.6, .4, 1) both;
+        }
+
+        .tile:nth-child(1) {
+            background: var(--t2);
+            color: #776e65;
+            animation-delay: .00s;
+        }
+
+        .tile:nth-child(2) {
+            background: var(--t4);
+            color: #776e65;
+            animation-delay: .06s;
+        }
+
+        .tile:nth-child(3) {
+            background: var(--t8);
+            animation-delay: .12s;
+        }
+
+        .tile:nth-child(4) {
+            background: var(--t16);
+            animation-delay: .18s;
+        }
+
+        .tile:nth-child(5) {
+            background: var(--t32);
+            animation-delay: .24s;
+        }
+
+        .tile:nth-child(6) {
+            background: var(--t2048);
+            font-size: .95rem;
+            animation-delay: .30s;
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: clamp(1.9rem, 5vw, 3rem);
+            line-height: 1.15;
+            color: var(--heading);
+            letter-spacing: -.01em;
+        }
+
+        .hero h1 .game {
+            display: block;
+            font-size: .55em;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+
+        .hero p {
+            margin: 0 auto;
+            max-width: 640px;
+            color: var(--text-muted);
+        }
+
+        .meta {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            justify-content: center;
+            margin-top: 18px;
+            font-size: .9rem;
+            color: var(--text-muted);
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            border-radius: 999px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+        }
+
+        .chip strong {
+            color: var(--heading);
+        }
+
+        .switch {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 26px;
+            flex-wrap: wrap;
+        }
+
+        .switch a {
+            padding: 12px 22px;
+            border-radius: 12px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #2b2925;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, .25);
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .switch a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 rgba(0, 0, 0, .25);
+        }
+
+        .switch a:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 rgba(0, 0, 0, .25);
+        }
+
+        .switch .p {
+            background: var(--t128);
+        }
+
+        .switch .t {
+            background: var(--t16);
+            color: #fff;
+        }
+
+        /* ---------- Layout ---------- */
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            padding-bottom: 64px;
+        }
+
+        @media (min-width: 960px) {
+            .layout {
+                grid-template-columns: 270px minmax(0, 1fr);
+                align-items: start;
+            }
+        }
+
+        /* ---------- TOC ---------- */
+        .toc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        @media (min-width: 960px) {
+            .toc {
+                position: sticky;
+                top: calc(var(--header-h) + 20px);
+                max-height: calc(100vh - var(--header-h) - 40px);
+                overflow: auto;
+            }
+        }
+
+        .toc summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 16px 20px;
+            font-weight: 800;
+            color: var(--heading);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toc summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .toc summary::after {
+            content: "+";
+            font-size: 1.3rem;
+            line-height: 1;
+            color: var(--accent);
+        }
+
+        .toc[open] summary::after {
+            content: "–";
+        }
+
+        .toc nav {
+            padding: 0 12px 16px;
+        }
+
+        .toc h2 {
+            margin: 10px 8px 6px;
+            font-size: .75rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .toc ol {
+            list-style: none;
+            margin: 0 0 6px;
+            padding: 0;
+            counter-reset: toc;
+        }
+
+        .toc li a {
+            display: block;
+            padding: 6px 10px;
+            border-radius: 8px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: .93rem;
+            line-height: 1.4;
+            border-left: 3px solid transparent;
+        }
+
+        .toc li a:hover {
+            background: var(--surface-2);
+        }
+
+        .toc li a.active {
+            background: var(--surface-2);
+            border-left-color: var(--accent);
+            color: var(--heading);
+            font-weight: 700;
+        }
+
+        /* ---------- Content ---------- */
+        .doc {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: clamp(22px, 4vw, 48px);
+            margin-bottom: 28px;
+        }
+
+        .doc-head {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 8px;
+        }
+
+        .doc-head .badge {
+            flex: none;
+            display: grid;
+            place-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            font-weight: 900;
+            color: #fff;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, .22);
+        }
+
+        #privacy .badge {
+            background: var(--t128);
+            color: #2b2925;
+        }
+
+        #terms .badge {
+            background: var(--t64);
+        }
+
+        .doc h2.doc-title {
+            margin: 0;
+            font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+            color: var(--heading);
+            line-height: 1.2;
+        }
+
+        .doc .lead {
+            color: var(--text-muted);
+            margin-top: 6px;
+        }
+
+        .doc section {
+            padding-top: 10px;
+        }
+
+        .doc section+section {
+            border-top: 1px dashed var(--border);
+            margin-top: 22px;
+        }
+
+        .doc h3 {
+            margin: 18px 0 8px;
+            font-size: 1.3rem;
+            color: var(--heading);
+            line-height: 1.3;
+        }
+
+        .doc h4 {
+            margin: 18px 0 6px;
+            font-size: 1.05rem;
+            color: var(--heading);
+        }
+
+        .doc p,
+        .doc ul,
+        .doc ol {
+            margin: 0 0 14px;
+            max-width: 75ch;
+        }
+
+        .doc ul {
+            padding-left: 1.25em;
+        }
+
+        .doc li {
+            margin-bottom: 6px;
+        }
+
+        .doc li::marker {
+            color: var(--accent);
+        }
+
+        .num {
+            display: inline-grid;
+            place-items: center;
+            min-width: 30px;
+            height: 30px;
+            padding: 0 6px;
+            margin-right: 10px;
+            border-radius: 8px;
+            font-size: .85rem;
+            font-weight: 900;
+            color: #fff;
+            background: var(--t8);
+            vertical-align: 2px;
+        }
+
+        #terms .num {
+            background: var(--t32);
+        }
+
+        .callout {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 0 0 16px;
+            background: var(--surface-2);
+            border-left: 4px solid var(--accent);
+            max-width: 75ch;
+        }
+
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 0 0 16px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .95rem;
+            min-width: 560px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            vertical-align: top;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--surface-2);
+            color: var(--heading);
+            font-weight: 800;
+        }
+
+        tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .placeholder {
+            background: rgba(237, 194, 46, .18);
+            border: 1px dashed var(--accent);
+            border-radius: 6px;
+            padding: 0 5px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: .9em;
+            white-space: nowrap;
+        }
+
+        .contact-card {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px 16px;
+            padding: 18px 20px;
+            border-radius: 14px;
+            background: var(--surface-2);
+            border: 1px solid var(--border);
+            max-width: 75ch;
+        }
+
+        .contact-card .btn {
+            background: var(--accent);
+            color: #2b2925;
+            border: 0;
+            box-shadow: 0 4px 0 #c9a21d;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 28px 0 40px;
+            color: var(--text-muted);
+            font-size: .9rem;
+            text-align: center;
+        }
+
+        footer nav {
+            display: flex;
+            gap: 18px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        /* ---------- Back to top ---------- */
+        .to-top {
+            position: fixed;
+            right: max(18px, env(safe-area-inset-right));
+            bottom: max(18px, env(safe-area-inset-bottom));
+            z-index: 40;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            border: 0;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            background: var(--t2048);
+            color: #fff;
+            box-shadow: 0 4px 0 #c9a21d, var(--shadow);
+            opacity: 0;
+            transform: translateY(12px);
+            pointer-events: none;
+            transition: opacity .2s ease, transform .2s ease;
+        }
+
+        .to-top.show {
+            opacity: 1;
+            transform: none;
+            pointer-events: auto;
+        }
+
+        .to-top svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                font-size: 1rem;
+            }
+
+            .tile {
+                width: 44px;
+                height: 44px;
+                font-size: 1rem;
+                border-radius: 10px;
+            }
+
+            .tile:nth-child(6) {
+                font-size: .78rem;
+            }
+
+            .btn .label {
+                display: none;
+            }
+
+            .brand-name {
+                font-size: .95rem;
+            }
+        }
+
+        @media print {
+
+            .topbar,
+            .toc,
+            .to-top,
+            .switch,
+            .tiles {
+                display: none !important;
+            }
+
+            body {
+                background: #fff;
+                color: #000;
+            }
+
+            .doc {
+                box-shadow: none;
+                border: 0;
+                padding: 0;
+            }
+
+            .layout {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+    <div id="top" class="container hero">
+        <div class="tiles" aria-hidden="true">
+            <span class="tile">2</span><span class="tile">4</span><span class="tile">8</span><span
+                class="tile">16</span><span class="tile">32</span><span class="tile">2048</span>
+        </div>
+        <h1><span class="game">Slam 2048</span>Privacy Policy &amp; Terms of Service</h1>
+        <p>Please read this page carefully. It explains how Slam 2048 handles information and the rules that apply when
+            you play the game.</p>
+        <div class="meta">
+            <span class="chip">Last updated: <strong><time datetime="2026-10-29">October 29, 2026</time></strong></span>
+            <span class="chip">Platform: <strong>Android (Google Play)</strong></span>
+        </div>
+        <div class="switch">
+            <a class="p" href="#privacy">Privacy Policy</a>
+            <a class="t" href="#terms">Terms of Service</a>
+        </div>
+    </div>
+
+    <div class="container layout">
+        <!-- ============ Table of contents ============ -->
+        <details class="toc" id="toc" open>
+            <summary>Contents</summary>
+            <nav aria-label="Table of contents">
+                <h2>Privacy Policy</h2>
+                <ol>
+                    <li><a href="#privacy-overview">1. Overview</a></li>
+                    <li><a href="#privacy-collect">2. Information &amp; Data</a></li>
+                    <li><a href="#privacy-ads">3. Advertising (Google AdMob)</a></li>
+                    <li><a href="#privacy-storage">4. Data Storage</a></li>
+                    <li><a href="#privacy-permissions">5. Device Permissions</a></li>
+                    <li><a href="#privacy-third-party">6. Third-Party Services</a></li>
+                    <li><a href="#privacy-choices">7. Your Choices</a></li>
+                    <li><a href="#privacy-children">8. Children's Privacy</a></li>
+                    <li><a href="#privacy-security">9. Security</a></li>
+                    <li><a href="#privacy-changes">10. Changes to This Policy</a></li>
+                </ol>
+                <h2>Terms of Service</h2>
+                <ol>
+                    <li><a href="#terms-acceptance">1. Acceptance of Terms</a></li>
+                    <li><a href="#terms-license">2. License to Use</a></li>
+                    <li><a href="#terms-ip">3. Intellectual Property</a></li>
+                    <li><a href="#terms-prohibited">4. Prohibited Conduct</a></li>
+                    <li><a href="#terms-ads">5. Advertising &amp; Third Parties</a></li>
+                    <li><a href="#terms-disclaimer">6. Disclaimer of Warranties</a></li>
+                    <li><a href="#terms-liability">7. Limitation of Liability</a></li>
+                    <li><a href="#terms-updates">8. Updates &amp; Discontinuation</a></li>
+                    <li><a href="#terms-termination">9. Termination</a></li>
+                    <li><a href="#terms-changes">10. Changes to These Terms</a></li>
+                </ol>
+                <h2>Help</h2>
+                <ol>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ol>
+            </nav>
+        </details>
+
+        <main id="main">
+            <!-- ================= PRIVACY POLICY ================= -->
+            <article class="doc" id="privacy" aria-labelledby="privacy-title">
+                <div class="doc-head">
+                    <span class="badge" aria-hidden="true">P</span>
+                    <h2 class="doc-title" id="privacy-title">Privacy Policy</h2>
+                </div>
+                <p class="lead">Effective as of <time datetime="2026-10-29">October 29, 2026</time></p>
+
+                <section id="privacy-overview">
+                    <h3><span class="num">1</span>Overview</h3>
+                    <p>This Privacy Policy describes how information is handled when you use <strong>Slam 2048</strong>
+                        (the "Game"), a casual number puzzle game for Android published on Google Play by <span
+                            class="placeholder">SONFEDEV </span> ("we", "us", or "our").</p>
+                    <p>We designed the Game so that you can play without telling us who you are. However, the Game may
+                        display ads provided by Google AdMob, and that service may process certain information from your
+                        device. This policy explains both what we do and what third-party services may do, so you can
+                        make an informed choice.</p>
+                </section>
+
+                <section id="privacy-collect">
+                    <h3><span class="num">2</span>Information &amp; Data</h3>
+
+                    <h4>2.1 Information we collect directly</h4>
+                    <div class="callout">
+                        <p><strong>We do not collect, store, or ask you to provide personal information.</strong> The
+                            Game does not require account registration or sign-in, and it never asks for your name,
+                            email address, phone number, contacts, photos, or any other personal details.</p>
+                    </div>
+                    <p>We do not operate our own servers to receive or store information about players, and we do not
+                        sell, rent, or trade any user information.</p>
+
+                    <h4>2.2 Information processed by third-party services</h4>
+                    <p>When ads are shown, the Google Mobile Ads SDK (AdMob) built into the Game may automatically
+                        collect and process certain information from your device. This processing is carried out by
+                        Google, under Google's own policies, and not by us. We do not receive information from Google
+                        that identifies you personally. See <a href="#privacy-ads">Section 3</a> for details.</p>
+
+                    <h4>2.3 Summary</h4>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Type of data</th>
+                                    <th scope="col">Collected by us?</th>
+                                    <th scope="col">May be processed by Google AdMob?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Name, email, phone number, account details</td>
+                                    <td>No</td>
+                                    <td>No (not requested by the Game)</td>
+                                </tr>
+                                <tr>
+                                    <td>Contacts, photos, files, precise location</td>
+                                    <td>No</td>
+                                    <td>No (the Game does not request these permissions)</td>
+                                </tr>
+                                <tr>
+                                    <td>Game progress &amp; settings (e.g. scores, sound preferences)</td>
+                                    <td>No — stored only on your device</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Device or other identifiers (e.g. advertising ID)</td>
+                                    <td>No</td>
+                                    <td>Yes, for advertising, analytics and fraud prevention</td>
+                                </tr>
+                                <tr>
+                                    <td>Approximate location (e.g. derived from IP address)</td>
+                                    <td>No</td>
+                                    <td>Yes, for ad delivery and measurement</td>
+                                </tr>
+                                <tr>
+                                    <td>App interactions, diagnostics &amp; performance data related to ads</td>
+                                    <td>No</td>
+                                    <td>Yes, for ad delivery, measurement and security</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="privacy-ads">
+                    <h3><span class="num">3</span>Advertising (Google AdMob)</h3>
+                    <p>To keep the Game free, it may display advertisements served by <strong>Google AdMob</strong>, a
+                        mobile advertising service provided by Google LLC and its affiliates ("Google").</p>
+                    <p>To serve and measure ads, AdMob may collect and process information such as:</p>
+                    <ul>
+                        <li>Your device's <strong>advertising ID</strong> (Android Advertising ID) or other device
+                            identifiers;</li>
+                        <li><strong>Device and app information</strong>, such as device model, operating system version,
+                            language, app version, and network type;</li>
+                        <li>Your <strong>IP address</strong>, which may be used to estimate your approximate location;
+                        </li>
+                        <li><strong>Usage and interaction data</strong> related to ads, such as ad impressions and
+                            clicks;</li>
+                        <li><strong>Diagnostic data</strong>, such as crash logs or performance information related to
+                            the ads SDK.</li>
+                    </ul>
+                    <p>Google may use this information to deliver ads, limit how often you see the same ad, measure ad
+                        performance, prevent fraud and abuse, and — depending on your settings and location — show ads
+                        that are personalized to your interests. Depending on your region, you may be shown a consent
+                        message asking for your choices about personalized ads before such ads are displayed.</p>
+                    <p>Ads may link to websites or apps operated by third parties. We are not responsible for the
+                        content or privacy practices of advertisers. Please review their policies before providing them
+                        with any information.</p>
+                    <p>To learn more about how Google uses data, please visit:</p>
+                    <ul>
+                        <li><a href="https://policies.google.com/privacy" target="_blank"
+                                rel="noopener noreferrer">Google Privacy Policy</a></li>
+                        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank"
+                                rel="noopener noreferrer">How Google uses information from sites or apps that use its
+                                services</a></li>
+                        <li><a href="https://policies.google.com/technologies/ads" target="_blank"
+                                rel="noopener noreferrer">How Google uses advertising</a></li>
+                    </ul>
+                </section>
+
+                <section id="privacy-storage">
+                    <h3><span class="num">4</span>Data Storage</h3>
+                    <p>We do not have our own servers for storing user information. Game data such as your high scores,
+                        progress, and settings, if any, is <strong>stored locally on your device only</strong> and is
+                        not transmitted to us.</p>
+                    <ul>
+                        <li>You can delete this data at any time by clearing the Game's app data in your device settings
+                            or by uninstalling the Game.</li>
+                        <li>Because we do not hold a copy of your data, we cannot restore lost progress or transfer it
+                            to another device.</li>
+                        <li>Depending on your device settings, Android's built-in backup feature may include app data in
+                            your personal device backup. Such backups are managed by Google and your device, not by us.
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="privacy-permissions">
+                    <h3><span class="num">5</span>Device Permissions</h3>
+                    <p>The Game does not request access to personal data on your device, such as your contacts, camera,
+                        microphone, photos, files, or precise location.</p>
+                    <p>To load ads, the Game requires network access (internet permission). The Google Mobile Ads SDK
+                        may also use the advertising ID permission on supported Android versions so that ads can be
+                        delivered and measured. These are standard, non-dangerous permissions that do not give access to
+                        your personal content.</p>
+                </section>
+
+                <section id="privacy-third-party">
+                    <h3><span class="num">6</span>Third-Party Services</h3>
+                    <p>The Game uses the following third-party service, which has its own privacy policy:</p>
+                    <ul>
+                        <li><strong>Google AdMob</strong> (Google Mobile Ads SDK) — <a
+                                href="https://policies.google.com/privacy" target="_blank"
+                                rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+                    </ul>
+                    <p>The Game is distributed through <strong>Google Play</strong>. Your use of Google Play, including
+                        downloading and updating the Game, is governed by Google's own terms and privacy policy.</p>
+                    <p>We do not control how third parties collect or use data and encourage you to review their
+                        policies. If we add other third-party services in the future, we will update this policy
+                        accordingly.</p>
+                </section>
+
+                <section id="privacy-choices">
+                    <h3><span class="num">7</span>Your Choices</h3>
+                    <p>You stay in control of how ads use your device information:</p>
+                    <ul>
+                        <li><strong>Reset or delete your advertising ID:</strong> on most Android devices, open
+                            <em>Settings → Google → Ads</em> (or <em>Settings → Privacy → Ads</em>) to reset or delete
+                            your advertising ID. Menu names may vary by device and Android version.
+                        </li>
+                        <li><strong>Manage ad personalization:</strong> visit <a href="https://myadcenter.google.com/"
+                                target="_blank" rel="noopener noreferrer">Google My Ad Center</a> to control
+                            personalized ads from Google.</li>
+                        <li><strong>Consent choices:</strong> if a consent message was shown to you in the Game, you may
+                            be able to change your choices where the Game provides that option.</li>
+                        <li><strong>Play offline:</strong> the core game may be played without an internet connection;
+                            ads are not loaded while your device is offline.</li>
+                        <li><strong>Stop all processing:</strong> uninstalling the Game stops any further data
+                            processing by the Game and the ads SDK on your device.</li>
+                    </ul>
+                    <p>Because we do not collect or hold personal information, we generally have no personal data to
+                        access, correct, or delete on your behalf. For requests regarding data processed by Google,
+                        please use the tools provided by Google or contact Google directly.</p>
+                </section>
+
+                <section id="privacy-children">
+                    <h3><span class="num">8</span>Children's Privacy</h3>
+                    <p>Slam 2048 is a casual puzzle game intended for a general audience. We do not knowingly collect
+                        personal information from children, and the Game does not ask any player — of any age — to
+                        provide personal information.</p>
+                    <p>As described above, ads in the Game are provided by Google AdMob, which may process device
+                        information to serve ads. Parents and guardians should be aware of this and supervise their
+                        children's use of mobile apps and devices. You can limit ad personalization and reset the
+                        advertising ID using the options in <a href="#privacy-choices">Section 7</a>.</p>
+                    <p>If you are a parent or guardian and believe that your child has provided personal information
+                        through the Game, please <a href="#contact">contact us</a>, and we will take appropriate steps
+                        to address your concern.</p>
+                </section>
+
+                <section id="privacy-security">
+                    <h3><span class="num">9</span>Security</h3>
+                    <p>Since we do not collect personal information or store user data on our own servers, the risk of
+                        your personal information being exposed through us is minimal. Game data stored on your device
+                        is protected by your device's own security features. Please keep your device and operating
+                        system up to date. No method of electronic storage or transmission is completely secure, and we
+                        cannot guarantee absolute security.</p>
+                </section>
+
+                <section id="privacy-changes">
+                    <h3><span class="num">10</span>Changes to This Policy</h3>
+                    <p>We may update this Privacy Policy from time to time — for example, if the Game's features or the
+                        third-party services it uses change. When we do, we will revise the "Last updated" date at the
+                        top of this page. We encourage you to review this page periodically. Your continued use of the
+                        Game after changes are posted means you accept the updated policy.</p>
+                </section>
+            </article>
+
+            <!-- ================= TERMS OF SERVICE ================= -->
+            <article class="doc" id="terms" aria-labelledby="terms-title">
+                <div class="doc-head">
+                    <span class="badge" aria-hidden="true">T</span>
+                    <h2 class="doc-title" id="terms-title">Terms of Service</h2>
+                </div>
+                <p class="lead">Effective as of <time datetime="2026-10-29">October 29, 2026</time></p>
+
+                <section id="terms-acceptance">
+                    <h3><span class="num">1</span>Acceptance of Terms</h3>
+                    <p>These Terms of Service ("Terms") govern your download, access to, and use of <strong>Slam
+                            2048</strong> (the "Game"), provided by <span class="placeholder">SONFEDEV </span> ("we",
+                        "us", or "our"). By installing or using the Game, you agree to these Terms and to our <a
+                            href="#privacy">Privacy Policy</a>. If you do not agree, please do not use the Game and
+                        uninstall it from your device.</p>
+                    <p>If you are under the age of majority in your country, please review these Terms with a parent or
+                        guardian, who must agree to them on your behalf.</p>
+                </section>
+
+                <section id="terms-license">
+                    <h3><span class="num">2</span>License to Use</h3>
+                    <p>Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable,
+                        revocable license to download, install, and use the Game on Android devices that you own or
+                        control, solely for your personal, non-commercial entertainment.</p>
+                    <p>Your use of the Game is also subject to the <a href="https://play.google/play-terms/"
+                            target="_blank" rel="noopener noreferrer">Google Play Terms of Service</a>. If there is a
+                        conflict between these Terms and Google Play's terms regarding the distribution of the Game,
+                        Google Play's terms apply to that extent.</p>
+                </section>
+
+                <section id="terms-ip">
+                    <h3><span class="num">3</span>Intellectual Property</h3>
+                    <p>The Game and all of its content — including but not limited to its code, design, graphics,
+                        artwork, animations, sounds, music, user interface, name, and logos — are owned by us or our
+                        licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
+                    <p>These Terms do not transfer any ownership rights to you. All rights not expressly granted to you
+                        are reserved. Third-party trademarks, such as Google, Google Play, and AdMob, belong to their
+                        respective owners.</p>
+                </section>
+
+                <section id="terms-prohibited">
+                    <h3><span class="num">4</span>Prohibited Conduct</h3>
+                    <p>When using the Game, you agree not to:</p>
+                    <ul>
+                        <li>Copy, modify, distribute, sell, rent, lease, or sublicense the Game or any part of it;</li>
+                        <li>Decompile, reverse engineer, disassemble, or attempt to extract the source code of the Game,
+                            except where such restriction is prohibited by applicable law;</li>
+                        <li>Use cheats, hacks, bots, automation software, or any unauthorized third-party tools that
+                            modify or interfere with the Game;</li>
+                        <li>Block, manipulate, or generate fraudulent impressions or clicks on advertisements displayed
+                            in the Game;</li>
+                        <li>Remove, obscure, or alter any copyright, trademark, or other proprietary notices;</li>
+                        <li>Use the Game for any unlawful purpose or in any way that violates applicable laws or
+                            regulations;</li>
+                        <li>Distribute modified versions of the Game or offer it through unauthorized channels;</li>
+                        <li>Attempt to disrupt, damage, or gain unauthorized access to the Game or any related systems
+                            or services.</li>
+                    </ul>
+                </section>
+
+                <section id="terms-ads">
+                    <h3><span class="num">5</span>Advertising &amp; Third Parties</h3>
+                    <p>The Game is free to play and may display advertisements provided by Google AdMob. Ads may link to
+                        third-party websites, apps, products, or services that we do not own or control. We do not
+                        endorse and are not responsible for third-party content, products, services, or privacy
+                        practices. Any interaction you have with an advertiser is solely between you and that
+                        advertiser.</p>
+                    <p>Information about how advertising may process data from your device is available in our <a
+                            href="#privacy-ads">Privacy Policy</a>.</p>
+                </section>
+
+                <section id="terms-disclaimer">
+                    <h3><span class="num">6</span>Disclaimer of Warranties</h3>
+                    <p>The Game is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without
+                        warranties of any kind, whether express or implied, including but not limited to implied
+                        warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                    <p>We do not guarantee that the Game will be uninterrupted, error-free, secure, or compatible with
+                        every device, or that game progress stored on your device will never be lost. Some jurisdictions
+                        do not allow the exclusion of certain warranties, so some of the above exclusions may not apply
+                        to you.</p>
+                </section>
+
+                <section id="terms-liability">
+                    <h3><span class="num">7</span>Limitation of Liability</h3>
+                    <p>To the maximum extent permitted by applicable law, we shall not be liable for any indirect,
+                        incidental, special, consequential, or punitive damages, or for any loss of data, game progress,
+                        profits, or goodwill, arising out of or related to your use of, or inability to use, the Game —
+                        even if we have been advised of the possibility of such damages.</p>
+                    <p>Because the Game is provided free of charge, to the maximum extent permitted by law our total
+                        liability for any claim relating to the Game shall not exceed the amount you paid us to use the
+                        Game, if any. Nothing in these Terms limits any rights you may have under mandatory consumer
+                        protection laws that cannot be waived by contract.</p>
+                </section>
+
+                <section id="terms-updates">
+                    <h3><span class="num">8</span>Updates &amp; Discontinuation</h3>
+                    <p>We may, at any time and without prior notice, update, modify, add, or remove features or content
+                        of the Game, including the type and frequency of ads. Some updates may be required to continue
+                        using the Game.</p>
+                    <p>We may also suspend or permanently discontinue the Game, or remove it from Google Play, at our
+                        discretion. In that case, we are not obligated to provide continued support, updates, or access,
+                        and we are not liable to you for any resulting loss, including loss of locally stored game
+                        progress.</p>
+                </section>
+
+                <section id="terms-termination">
+                    <h3><span class="num">9</span>Termination</h3>
+                    <p>Your license to use the Game ends automatically if you fail to comply with these Terms. You may
+                        stop using the Game at any time by uninstalling it from your device. Upon termination, you must
+                        stop using the Game and delete it from your devices. Sections that by their nature should
+                        survive termination — including Intellectual Property, Disclaimer of Warranties, and Limitation
+                        of Liability — will continue to apply.</p>
+                </section>
+
+                <section id="terms-changes">
+                    <h3><span class="num">10</span>Changes to These Terms</h3>
+                    <p>We may revise these Terms from time to time. When we do, we will update the "Last updated" date
+                        at the top of this page. Changes take effect when posted. Your continued use of the Game after
+                        changes are posted means you accept the revised Terms. If you do not agree with the changes,
+                        please stop using the Game.</p>
+                    <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will
+                        remain in full force and effect. Our failure to enforce any right or provision does not
+                        constitute a waiver of that right or provision.</p>
+                </section>
+            </article>
+
+            <!-- ================= CONTACT ================= -->
+            <article class="doc" id="contact" aria-labelledby="contact-title">
+                <div class="doc-head">
+                    <span class="badge" aria-hidden="true" style="background: var(--t2048);">@</span>
+                    <h2 class="doc-title" id="contact-title">Contact Us</h2>
+                </div>
+                <p>If you have any questions, concerns, or requests about this Privacy Policy or these Terms of Service,
+                    please contact us. Please do not include sensitive personal information in your message.</p>
+                <div class="contact-card">
+                    <div>
+                        <div style="color: var(--text-muted); font-size: .9rem;">Developer support email</div>
+                        <div><span class="placeholder">sontrtb@gmail.com</span></div>
+                    </div>
+                    <a class="btn" href="mailto:sontrtb@gmail.com?subject=Slam%202048%20-%20Privacy%20%2F%20Terms">Send
+                        email</a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <nav aria-label="Footer">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p>&copy; <span id="year">2026</span> <span class="placeholder">SONFEDEV </span>. Slam 2048. All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script>
+        (function () {
+            // Back button: return to the previous page if the visitor came from one,
+            // otherwise follow the link (Google Play listing).
+            var back = document.getElementById('backBtn');
+            back.addEventListener('click', function (e) {
+                if (window.history.length > 1 && document.referrer) {
+                    e.preventDefault();
+                    window.history.back();
+                } else if (back.getAttribute('href').indexOf('[') === 0) {
+                    // Placeholder not yet replaced: fall back to top of page.
+                    e.preventDefault();
+                    window.scrollTo({ top: 0 });
+                }
+            });
+
+            // Back-to-top button
+            var toTop = document.getElementById('toTop');
+            toTop.addEventListener('click', function () { window.scrollTo({ top: 0 }); });
+
+            // Collapse TOC on small screens by default
+            var toc = document.getElementById('toc');
+            var mq = window.matchMedia('(min-width: 960px)');
+            function syncToc() { if (mq.matches) toc.setAttribute('open', ''); else toc.removeAttribute('open'); }
+            syncToc();
+            if (mq.addEventListener) mq.addEventListener('change', syncToc);
+            toc.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () { if (!mq.matches) toc.removeAttribute('open'); });
+            });
+
+            // Highlight active section in the TOC
+            var links = {};
+            toc.querySelectorAll('a[href^="#"]').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+            var current;
+            function onScroll() {
+                toTop.classList.toggle('show', window.scrollY > 600);
+                var offset = 120, active = null;
+                document.querySelectorAll('main section[id], #contact').forEach(function (s) {
+                    if (s.getBoundingClientRect().top - offset <= 0) active = s.id;
+                });
+                if (active !== current) {
+                    if (current && links[current]) links[current].classList.remove('active');
+                    if (active && links[active]) links[active].classList.add('active');
+                    current = active;
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            document.getElementById('year').textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
+
+</html>
